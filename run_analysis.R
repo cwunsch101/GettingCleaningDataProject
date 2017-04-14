@@ -104,6 +104,6 @@ test_labels <- "C:\\data\\test\\y_test.txt"
    TotalData <- cbind(all_data, all_labels, all_subjects) 
    names(TotalData) <- c("col_names"=col_names,"activity","subject") 
 
-# Create data set of averages by subject and activity
+# Create data set of averages by subject and activity and write file
    SubjectAverages <- TotalData %>% group_by(activity,subject) %>% summarize_all(funs(mean)) 
-
+   write.table(SubjectAverages, file="C:\\data\\subjectaverages.txt", sep="|", eol="\n", row.names=FALSE)
