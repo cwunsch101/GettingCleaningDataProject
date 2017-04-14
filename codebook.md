@@ -36,3 +36,6 @@ all_subjects - merged data set of testing and training subjects (subjects1, subj
 all_labels - merged data set of testing and training labels (labels1, labels2)
 TotalData - final tidy data set of all testing and training observations 
 SubjectAverages - final tidy data set of averages by subject and activity from TotalData data set
+
+# Results file
+subjectaverages.txt file iw the SubjectAverages data set written out to the C:\data directory
